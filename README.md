@@ -29,7 +29,7 @@ Clone the git repository locally :
 
 Then deploy the files in your local repo (beware if it is a release or a snapshot !!!):
 
-    mvn -DaltDeploymentRepository=snapshot-repo::default::file:PATH_TO/maven-repo/snapshots/ clean deploy@
+    mvn -DaltDeploymentRepository=snapshot-repo::default::file:PATH_TO/maven-repo/snapshots/ clean deploy
 
 And commit and push your changes to github:
 
