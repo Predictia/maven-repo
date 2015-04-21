@@ -11,11 +11,15 @@ Add this in your pom.xml file:
     <repositories>
       <repository>
         <id>predictia-public-snapshots</id>
-        <url>https://raw.github.com/Predictia/maven-repo/master/snapshots</url>
+        <url>https://raw.githubusercontent.com/Predictia/maven-repo/master/snapshots</url>
       </repository>
       <repository>
         <id>predictia-public-releases</id>
-        <url>https://raw.github.com/Predictia/maven-repo/master/releases</url>
+        <url>https://raw.githubusercontent.com/Predictia/maven-repo/master/releases</url>
+      </repository>
+      <repository>
+        <id>predictia-thirdparty</id>
+        <url>https://raw.githubusercontent.com/Predictia/maven-repo/master/thirdparty</url>
       </repository>
     </repositories>
 
@@ -30,6 +34,10 @@ Clone the git repository locally :
 Then deploy the files in your local repo (beware if it is a release or a snapshot !!!):
 
     mvn -DaltDeploymentRepository=snapshot-repo::default::file:PATH_TO/maven-repo/snapshots/ clean deploy
+
+Deploy jars to third party repo:
+
+    mvn deploy:deploy-file -DgroupId=the.group.id -DartifactId=artifactid -Dversion=version -Dpackaging=jar -Dfile=/path/to/my_jar_file.jar -DrepositoryId=local-thirdparty-repo -Durl=file:PATH_TO/maven-repo/thirdparty/
 
 And commit and push your changes to github:
 
