@@ -39,6 +39,14 @@ Deploy jars to third party repo:
 
     mvn deploy:deploy-file -DgroupId=the.group.id -DartifactId=artifactid -Dversion=version -Dpackaging=jar -Dfile=/path/to/my_jar_file.jar -DrepositoryId=local-thirdparty-repo -Durl=file:PATH_TO/maven-repo/thirdparty/
 
+
+Relase new version to local maven repository
+
+```
+mvn release:prepare
+mvn release:perform -Darguments=-DaltDeploymentRepository=releases-repo::default::file:PATH_TO/maven-repo/releases/
+```
+
 And commit and push your changes to github:
 
     git commit -m "MESSAGE"
