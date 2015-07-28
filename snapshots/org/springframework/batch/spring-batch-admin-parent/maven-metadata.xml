@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.springframework.batch</groupId>
+  <artifactId>spring-batch-admin-parent</artifactId>
+  <versioning>
+    <versions>
+      <version>2.0.0.BUILD-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20150728062455</lastUpdated>
+  </versioning>
+</metadata>
