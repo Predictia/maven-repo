@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>de.infinit</groupId>
+  <artifactId>spring-boot-autoconfigure-wro4j</artifactId>
+  <versioning>
+    <versions>
+      <version>0.0.7-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20150811102004</lastUpdated>
+  </versioning>
+</metadata>
